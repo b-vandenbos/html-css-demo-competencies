@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+/* 27G */    display: flex;
+/* 27F */    flex-direction: column;
+    background: salmon;
+    height: 100px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+span {
+    color: salmon;
+}
+
+.li-vertical {
+/* 25F */    display: inline-block;
+    margin: 10px;
+    padding: 4px;
+    border: 1px solid salmon;
+}
+
+.wrap-demo :nth-child(6) {
+/* 26L */    border: 5px solid grey;
+}
+
+article {
+/* 24D */    border: 2px solid salmon;
+/* 24C */    margin: 20px auto;
+/* 24E */    padding: 10px;
+/* 24F */    box-sizing: border-box;
+    width: 95%;
+}
+
+/* 22C-4 */ article > p {
+   color: salmon;
+}
+
+.clip-text {
+    width: 500px;
+    height: 20px;
+    border: 1px solid salmon;
+/* 30E */    overflow: hidden;
+}
+
+.clip-text:hover {
+/* 30E */   overflow: visible;
+    height: auto;
+}
+
+/* 22C-2 */ .backgroundurl-demo {
+    color: white;
+/* 25C-2 */    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 24px;
+    width: 800px;
+    height: 100px;
+/* 23F */   background-image: url('https://images.unsplash.com/photo-1555284023-249222086985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section {
+    border: 2px solid grey;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 95%;
+}
+
+customtag {
+/* 23D-1 */    font-weight: 700;
+/* 23D-2 */    color: salmon;
+/* 23D-3 */    font-size: 20px;
+/* 23E */      background-color: grey;
+/* 30C */      box-shadow: 10px 10px 10px grey;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+/* 25C-3 */  position: fixed;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;
+/* 30D */    background-image: linear-gradient(#F5F7FA, #B8C6DB);
+}
+
+/* 22C-1 */ #script-demo {
+    width: 50%;
+    height: 100px;
+    margin: 20px auto 100px;
+    background: salmon;
+    color: white;
+    text-align: center;
+/* 25D */     float: right;
+/* 25C-1 */   position: relative;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+/* 27C */    justify-content: center;
+/* 27D */    align-items: center;
+}
+
+/* 22C-3 */ #script-demo span {
+    font-weight: 700;
+    color: black;
+}
+
+/* 26H */ #script-demo:hover {
+    background: none;
+    border: 2px solid salmon;
+    color: black;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+/* 22C-5 */ h1 + h2 {
+    font-style: italic;
+}
+
+.animation-frame {
+    width: 80%;
+    height: 140px;
+    margin: 10px auto;
+    border: 2px dotted salmon;
+    display: flex;
+    align-items: center;
+}
+
+.animation-demo {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background: grey;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+/* 28D */    transition: 10s;
+}
+
+/* 28C */ @keyframes slide {
+    from {
+        margin-left: 10px;
+/* 28E */        transform: rotate(0deg);
+    }
+
+    to {
+        margin-left: calc(100% - 120px);
+        background: salmon;
+        width: 100px;
+        height: 100px;
+        transform: rotate(359deg);
+    }
+}
+
+.wrap-demo {
+    display: flex;
+/* 27E */    flex-wrap: wrap;
+}
+
+.button-demo {
+    border-radius: 5px;
+    background: salmon;
+    border: 2px solid salmon;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* 26E */ .button-demo:disabled {
+    background: grey;
+    border: none;
+    color: salmon;
+    cursor: default;
+}
+
+/* 26G */ .button-demo:focus {
+    outline: 0;
+}
+
+/* 26H */ .button-demo:hover {
+    color: black;
+    background: none;
+}
